@@ -24,7 +24,7 @@ const Shop = () => {
   ];
 
   return (
-    <section className="mt-8">
+    <section className="mt-8 text-center">
       <h2 className="text-xl font-semibold mb-4">Optical Shop</h2>
       <div className="grid md:grid-cols-3 gap-4">
         {SHOP_ITEMS.map((item) => (

@@ -1,34 +1,43 @@
-import { Link } from "react-router-dom";
+import heroImage from "../assets/images/sightgivers-hero.png";
 import { Calendar, Phone } from "lucide-react";
 
 export default function Hero() {
   return (
-    <div className="bg-gradient-to-r from-white to-emerald-50 p-6 rounded-2xl flex flex-col md:flex-row items-center gap-6">
-      <div className="flex-1">
-        <h1 className="text-3xl font-bold">Clearer vision starts here</h1>
-        <p className="mt-2 text-slate-600">
-          Comprehensive eye care for the whole family. Book an appointment today
-          or call us.
-        </p>
-        <div className="mt-4 flex gap-3">
-          <Link
-            to="/book"
-            className="bg-emerald-600 text-white px-4 py-2 rounded-lg"
-          >
-            Book Appointment
-          </Link>
-          <a
-            href="tel:+233501234567"
-            className="border px-4 py-2 rounded-lg inline-flex items-center gap-2"
-          >
-            <Phone size={14} />
-            Call Clinic
-          </a>
+    <section
+      className="h-[70vh] w-full flex items-center justify-center text-white overflow-hidden"
+      style={{ backgroundImage: `url(${heroImage})` }}
+    >
+      {/* Dark overlay */}
+      <div className="bg-black/50 p-8 rounded-lg text-white mx-8">
+        {/* Content */}
+        <div className="relative z-10 text-center px-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            Clear Vision, Caring Hands
+          </h1>
+          <p className="text-lg md:text-xl mb-6">
+            Expert eye care, affordable lenses, and modern technology — right
+            here in Ho.
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col md:flex-row gap-4 justify-center">
+            <a
+              href="#services"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold shadow-md transition"
+            >
+              Book Appointment
+            </a>
+
+            <a
+              href="tel:+233xxxxxxxxx" // replace with actual phone number
+              className="flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-semibold shadow-md transition"
+            >
+              <Phone size={18} />
+              Call Us
+            </a>
+          </div>
         </div>
       </div>
-      <div className="w-48 h-48 bg-slate-100 rounded-lg flex items-center justify-center">
-        <Calendar size={48} />
-      </div>
-    </div>
+    </section>
   );
 }

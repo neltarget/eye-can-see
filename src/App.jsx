@@ -11,6 +11,7 @@ import BookingConfirmation from "./pages/BookingConfirmation";
 import Contact from "./pages/Contact";
 import Doctors from "./pages/Doctors";
 import ServiceDetail from "./pages/ServiceDetail";
+import About from "./pages/About";
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
             <Route path="/services/:id" element={<ServiceDetail />} />
             <Route path="/doctor" element={<Doctors />} />
             <Route path="/booking" element={<Booking />} />
+            <Route path="/about" element={<About />} />
             <Route
               path="/booking/confirmation/:id"
               element={<BookingConfirmation />}

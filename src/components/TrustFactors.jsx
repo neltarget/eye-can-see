@@ -22,7 +22,7 @@ export default function TrustFactors() {
     },
   ];
   return (
-    <section>
+    <section className="text-center">
       <h2 className="text-xl font-semibold mb-6">
         Why patients trust Sight Givers
       </h2>

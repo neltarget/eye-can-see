@@ -1,29 +1,38 @@
-import ServiceCard from "../components/ServiceCard";
+import { Link } from "react-router-dom";
+import { services } from "../data/servicesData";
 
-function Services() {
-  const SERVICES = [
-    {
-      id: "eye-exam",
-      title: "Comprehensive Eye Exam",
-      summary: "Full vision check and prescription update.",
-    },
-    {
-      id: "cataract",
-      title: "Cataract Assessment & Surgery",
-      summary: "Consultation and advanced cataract care.",
-    },
-  ];
-
+export default function Services() {
   return (
-    <section>
-      <h2 className="text-xl font-semibold mb-4">Popular Services</h2>
-      <div className="grid md:grid-cols-2 gap-4">
-        {SERVICES.map((s) => (
-          <ServiceCard key={s.id} service={s} />
-        ))}
+    <section className="bg-white py-2 px-6">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl font-bold text-blue-700 mb-6">Our Services</h2>
+        <p className="text-gray-600 max-w-2xl mx-auto mb-4">
+          At <strong>Sight Givers Eye Clinic</strong>, we combine modern
+          technology with compassionate care. Explore our range of services
+          designed to protect and improve your vision.
+        </p>
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {services.map((service) => (
+            <div
+              key={service.id}
+              className="bg-gray-50 rounded-2xl shadow-md p-3 text-left hover:shadow-lg transition"
+            >
+              <div className="mb-1 flex justify-center">{service.icon}</div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-1">
+                {service.title}
+              </h3>
+              <p className="text-gray-600 mb-1.5">{service.shortDescription}</p>
+              <Link
+                to={`/services/${service.id}`}
+                className="text-blue-600 font-medium hover:underline"
+              >
+                Learn More →
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
 }
-
-export default Services;
