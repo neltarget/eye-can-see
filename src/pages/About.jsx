@@ -70,7 +70,7 @@ export default function About() {
             Beyond eye testing and treatment, he ensures patients are well
             educated about their eye health and provides guidance on choosing
             the right lenses, glasses, and preventive care.
-          <br />
+            <br />
             His mission is simple:{" "}
             <em>
               to give every patient the gift of excellent vision and confidence
@@ -80,7 +80,7 @@ export default function About() {
           </p>
           <Link
             to="/booking"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full block w-1/2 mx-auto font-semibold shadow-md transition"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold shadow-md transition"
           >
             Book Appointment
           </Link>
