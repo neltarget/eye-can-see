@@ -19,7 +19,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
-    { name: "Shop", path: "/shop" },
+    //{ name: "Shop", path: "/shop" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
@@ -90,7 +90,7 @@ export default function Navbar() {
             </NavLink>
           ))}
           <Link
-            to="/book"
+            to="/booking"
             onClick={() => setIsOpen(false)}
             className="block bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition text-center"
           >

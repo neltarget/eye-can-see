@@ -1,5 +1,6 @@
 import heroImage from "../assets/images/sightgivers-hero.png";
 import { Calendar, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -21,15 +22,15 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <a
-              href="#services"
+            <Link
+              to="/booking"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold shadow-md transition"
             >
               Book Appointment
-            </a>
+            </Link>
 
             <a
-              href="tel:+233xxxxxxxxx" // replace with actual phone number
+              href="tel:+233240553897"
               className="flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-semibold shadow-md transition"
             >
               <Phone size={18} />
