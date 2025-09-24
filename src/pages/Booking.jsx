@@ -30,7 +30,7 @@ export default function Booking() {
 
   return (
     <section className="max-w-3xl mx-auto px-6 py-16">
-      <h2 className="text-3xl font-bold text-blue-800 mb-6 flex items-center gap-2">
+      <h2 className="text-3xl font-bold text-blue-800 mb-6 mx-auto flex items-center gap-2">
         <Calendar className="w-7 h-7" />
         Book an Appointment
       </h2>

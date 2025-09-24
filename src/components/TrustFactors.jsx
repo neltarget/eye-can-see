@@ -1,12 +1,14 @@
-import {
-  User,
-  ShieldCheck,
-  Star,
-} from "lucide-react";
+import { User, ShieldCheck, Star, Stethoscope } from "lucide-react";
+
 export default function TrustFactors() {
   const factors = [
     {
       icon: <ShieldCheck size={32} className="text-emerald-600" />,
+      title: "DVLA Approved",
+      desc: "Certified eye center authorized for DVLA vision testing.",
+    },
+    {
+      icon: <Stethoscope size={32} className="text-emerald-600" />,
       title: "Certified Specialist",
       desc: "Experienced ophthalmologist you can trust.",
     },
@@ -21,12 +23,13 @@ export default function TrustFactors() {
       desc: "Tailored treatment plans for each patient.",
     },
   ];
+
   return (
     <section className="text-center">
       <h2 className="text-xl font-semibold mb-6">
         Why patients trust Sight Givers
       </h2>
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-4 gap-6">
         {factors.map((f, idx) => (
           <div
             key={idx}

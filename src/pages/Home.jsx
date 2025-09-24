@@ -7,7 +7,7 @@ import AboutSummary from "../components/AboutSummary";
 
 export default function Home() {
   return (
-    <section className="space-y-12">
+    <section className="space-y-10">
       <Hero />
       <TrustFactors />
       <AboutSummary />
