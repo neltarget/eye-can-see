@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import doctorImage from "../assets/images/dr-light.png";
 export default function AboutSummary() {
   return (
@@ -19,12 +20,12 @@ export default function AboutSummary() {
           <strong>Dr. Light</strong>, an experienced American-trained eye
           specialist, we provide expert treatment using the latest equipment.
         </p>
-        <a
-          href="/about"
+        <Link
+          to="/about"
           className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-full shadow-md transition"
         >
           Learn More
-        </a>
+        </Link>
       </div>
     </div>
   );
