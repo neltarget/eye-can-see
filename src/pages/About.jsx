@@ -78,12 +78,14 @@ export default function About() {
             </em>
             .
           </p>
-          <Link
-            to="/booking"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold shadow-md transition"
-          >
-            Book Appointment
-          </Link>
+          <div className="flex justify-center">
+            <Link
+              to="/booking"
+              className="bg-blue-600 hover:bg-blue-700 text-white text-center px-6 py-3 rounded-full font-semibold shadow-md transition"
+            >
+              Book Appointment
+            </Link>
+          </div>
         </div>
       </div>
     </section>
