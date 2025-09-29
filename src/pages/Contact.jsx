@@ -1,9 +1,10 @@
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa"; // Import WhatsApp icon
 
 export default function Contact() {
   return (
     <section className="relative py-6 bg-white overflow-hidden">
-      {/* Background blobs for branding */}
+      {/* Background blobs */}
       <div className="absolute -top-20 -left-20 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse" />
       <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-emerald-100 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-pulse" />
 
@@ -50,9 +51,26 @@ export default function Contact() {
                 </a>
               </span>
             </div>
+            {/* WhatsApp Link */}
+            <div className="flex items-center space-x-4">
+              <FaWhatsapp className="text-green-500 text-xl" />
+              <span>
+                WhatsApp:{" "}
+                <a
+                  href="https://wa.me/233240553897"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-600 font-medium hover:underline"
+                >
+                  Chat with us
+                </a>
+              </span>
+            </div>
             <div className="flex items-center space-x-4">
               <MapPin className="text-blue-600" />
-              <span>Location: Near Municipal Assembly, Ho, Volta Region, Ghana</span>
+              <span>
+                Location: Near Municipal Assembly, Ho, Volta Region, Ghana
+              </span>
             </div>
             <div>
               <iframe
