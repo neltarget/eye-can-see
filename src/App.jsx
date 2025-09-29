@@ -79,6 +79,7 @@ export default function App() {
               <Route path="/services/door-to-door" element={<DoorToDoor />} />
             </Route>
 
+            {/* Patient Resources subpages  */}
             <Route path="/patient-resources" element={<PatientResources />}>
               <Route index element={<FirstVisit />} /> {/* Default page */}
               <Route path="first-visit" element={<FirstVisit />} />

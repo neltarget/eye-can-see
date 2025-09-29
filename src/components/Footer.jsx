@@ -4,7 +4,7 @@ import { FaWhatsapp, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-600 text-white pt-10">
+    <footer className="bg-blue-600 text-white pt-6">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* About Clinic */}
         <div>
@@ -100,7 +100,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="mt-2 mb-3 border-t border-blue-500 pt-4 text-center text-sm text-blue-100">
+      <div className="mt-1 mb-3 border-t border-blue-500 pt-4 text-center text-sm text-blue-100">
         &copy; {new Date().getFullYear()} Sight Givers Eye Clinic. All rights
         reserved.
       </div>
