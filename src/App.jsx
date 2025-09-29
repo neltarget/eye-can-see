@@ -10,6 +10,7 @@ import Booking from "./pages/Booking";
 import BookingConfirmation from "./pages/BookingConfirmation";
 import Contact from "./pages/Contact";
 import ServiceDetail from "./pages/ServiceDetail";
+import WhatsAppChat from "./components/WhatsAppChat";
 import NotFound from "./pages/NotFound";
 
 // About Pages
@@ -79,6 +80,9 @@ export default function App() {
 
         {/* Footer */}
         <Footer />
+
+        {/* Floating WhatsApp Chat */}
+        <WhatsAppChat />
       </div>
     </Router>
   );

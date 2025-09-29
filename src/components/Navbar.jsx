@@ -42,7 +42,7 @@ export default function Navbar() {
         { name: "Eye Exams", path: "/services/eye-exams" },
         {
           name: "Glasses & Contact Lenses",
-          path: "/services/glasses-contact-lenses",
+          path: "/services/glasses-contacts",
         },
         {
           name: "Cataract Surgery & Glaucoma",
@@ -69,7 +69,7 @@ export default function Navbar() {
           <Mail size={16} />{" "}
           <a href="mailto:info@sightgivers.com">info@sightgivers.com</a>
         </div>
-        <div className="flex gap-3 items-center">
+        <div className="flex gap-3 items-center mr-16">
           <a href="#" className="hover:text-gray-300">
             <Facebook size={20} />
           </a>
