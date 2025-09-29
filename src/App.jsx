@@ -18,7 +18,6 @@ import About from "./pages/About";
 import ClinicHistory from "./pages/about-pages/ClinicHistory";
 import MissionVision from "./pages/about-pages/MissionVision";
 import MeetTheTeam from "./pages/about-pages/MeetTheTeam";
-import PatientTestimonials from "./pages/about-pages/PatientTestimonials";
 
 // Service Pages
 import EyeExams from "./pages/services-pages/EyeExams";
@@ -26,6 +25,13 @@ import GlassesContacts from "./pages/services-pages/GlassesContacts";
 import CataractGlaucoma from "./pages/services-pages/CataractGlaucoma";
 import DoorToDoor from "./pages/services-pages/DoorToDoor";
 
+// Patient Resources subpages
+import PatientResources from "./pages/PatientResources";
+import FirstVisit from "./pages/patient-resources/FirstVisit";
+import InsurancePayment from "./pages/patient-resources/InsurancePayment";
+import DownloadableForms from "./pages/patient-resources/DownloadableForms";
+import FAQs from "./pages/patient-resources/FAQs";
+import PatientTestimonials from "./pages/about-pages/PatientTestimonials";
 export default function App() {
   return (
     <Router>
@@ -73,6 +79,16 @@ export default function App() {
               <Route path="/services/door-to-door" element={<DoorToDoor />} />
             </Route>
 
+            <Route path="/patient-resources" element={<PatientResources />}>
+              <Route index element={<FirstVisit />} /> {/* Default page */}
+              <Route path="first-visit" element={<FirstVisit />} />
+              <Route path="insurance-payment" element={<InsurancePayment />} />
+              <Route
+                path="downloadable-forms"
+                element={<DownloadableForms />}
+              />
+              <Route path="faqs" element={<FAQs />} />
+            </Route>
             {/* Catch-all for 404 */}
             <Route path="*" element={<NotFound />} />
           </Routes>
