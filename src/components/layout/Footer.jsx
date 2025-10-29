@@ -54,7 +54,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
               {/* Logo */}
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <img
                   src={logo}
                   alt="Eye Can See Logo"
