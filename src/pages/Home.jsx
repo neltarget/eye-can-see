@@ -1,19 +1,17 @@
-import Hero from "../components/Hero";
-import TrustFactors from "../components/TrustFactors";
-import Testimonials from "../components/Testimonials";
-import Services from "./Services";
-import Shop from "./Shop";
-import AboutSummary from "../components/AboutSummary";
+// pages/Home.jsx
+import React from "react";
+import Hero from "../components/sections/Hero";
+import WelcomeMessage from "../components/sections/WelcomeMessage";
+import OutreachSlideshow from "../components/sections/OutreachSlideshow";
 
-export default function Home() {
+const Home = () => {
   return (
-    <section className="space-y-10">
+    <div>
       <Hero />
-      <TrustFactors />
-      <AboutSummary />
-      <Services />
-      <Testimonials />
-      <Shop />
-    </section>
+      <WelcomeMessage />
+      <OutreachSlideshow />
+    </div>
   );
-}
+};
+
+export default Home;

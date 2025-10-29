@@ -1,15 +1,15 @@
-// pages/PatientResources.jsx
+// pages/WhoWeAre.jsx
 import React from "react";
 import { Outlet } from "react-router-dom";
-import PatientResourcesSidebar from "../components/navigation/PatientResourcesSidebar";
+import WhoWeAreSidebar from "../components/navigation/WhoWeAreSidebar";
 
-const PatientResources = () => {
+const WhoWeAre = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="flex flex-col lg:flex-row gap-8">
-        {/* Sidebar Navigation for Patient Resources sub-pages */}
+        {/* Sidebar Navigation for Who We Are sub-pages */}
         <div className="lg:w-1/4">
-          <PatientResourcesSidebar />
+          <WhoWeAreSidebar />
         </div>
 
         {/* Main Content Area */}
@@ -21,4 +21,4 @@ const PatientResources = () => {
   );
 };
 
-export default PatientResources;
+export default WhoWeAre;
