@@ -18,7 +18,7 @@ const PatientResourcesSidebar = () => {
       description: "Record release, consent forms, etc.",
     },
     {
-      path: "/patient-resources/common-questions",
+      path: "/patient-resources/FAQs",
       icon: <HelpCircle className="w-5 h-5" />,
       label: "Common Questions",
       description: "Procedures, glasses, and more",

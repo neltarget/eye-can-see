@@ -4,7 +4,7 @@ import { Quote, Target, Shield } from "lucide-react";
 
 const WelcomeMessage = () => {
   return (
-    <section className="py-16 bg-cream-50">
+    <section className="py-16 bg-stone-50">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
