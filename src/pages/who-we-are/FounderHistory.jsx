@@ -27,37 +27,37 @@ const FounderHistory = () => {
             </div>
           </div>
 
-          {/* Quick Facts */}
-          <div className="lg:col-span-2 p-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div className="flex items-center space-x-3">
-                <Calendar className="w-5 h-5 text-green-600" />
-                <div>
-                  <div className="text-sm text-gray-500">Born</div>
-                  <div className="font-semibold">March 9, 1987</div>
+          <div className="bg-white rounded-2xl shadow-lg border border-stone-200 p-8">
+            {/* Header with Doctor's Image */}
+            <div className="flex flex-col items-center text-center mb-8">
+              <div className="relative mb-4">
+                <img
+                  src={doctorPlaceholder}
+                  alt="Dr. Light Amedzekor"
+                  className="w-24 h-24 rounded-full object-cover border-4 border-amber-300 shadow-md"
+                  onError={(e) => {
+                    // Fallback if image doesn't load
+                    e.target.style.display = "none";
+                    e.target.nextSibling.style.display = "flex";
+                  }}
+                />
+                {/* Fallback avatar */}
+                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-white font-bold text-xl border-4 border-amber-300 shadow-md hidden">
+                  DL
+                </div>
+
+                {/* Verified Badge */}
+                <div className="absolute -bottom-2 -right-2 bg-green-600 text-white p-1 rounded-full">
+                  <Award className="w-4 h-4" />
                 </div>
               </div>
-              <div className="flex items-center space-x-3">
-                <MapPin className="w-5 h-5 text-green-600" />
-                <div>
-                  <div className="text-sm text-gray-500">Birthplace</div>
-                  <div className="font-semibold">United States</div>
-                </div>
-              </div>
-              <div className="flex items-center space-x-3">
-                <GraduationCap className="w-5 h-5 text-green-600" />
-                <div>
-                  <div className="text-sm text-gray-500">Education</div>
-                  <div className="font-semibold">USA Educated</div>
-                </div>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Heart className="w-5 h-5 text-green-600" />
-                <div>
-                  <div className="text-sm text-gray-500">Founded</div>
-                  <div className="font-semibold">January 1, 2012</div>
-                </div>
-              </div>
+
+              <h3 className="text-xl font-bold text-green-800">
+                Dr. Light Amedzekor
+              </h3>
+              <p className="text-amber-600 font-medium">
+                Founder & Visionary Leader
+              </p>
             </div>
           </div>
         </div>

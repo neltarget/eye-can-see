@@ -113,7 +113,7 @@ const Header = () => {
               <span className="text-2xl font-bold text-green-700">
                 EYE CAN SEE
               </span>
-              <span className="text-xs text-green-600 font-medium tracking-wider">
+              <span className="text-sm text-amber-400 font-medium tracking-wider">
                 LET THERE BE LIGHT
               </span>
             </div>
@@ -183,7 +183,7 @@ const Header = () => {
 
           {/* Donate Now Button - Desktop */}
           <div className="hidden lg:block">
-            <button className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-300 flex items-center text-base">
+            <button className="bg-green-600 text-amber-100 px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-300 flex items-center text-base">
               <Heart className="w-5 h-5 mr-2" />
               Donate Now
             </button>

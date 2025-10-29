@@ -71,7 +71,7 @@ export default function Hero() {
   return (
     <div className="relative">
       {/* Hero Section */}
-      <section className="relative h-[70vh] w-full overflow-hidden">
+      <section className="relative h-[60vh] w-full overflow-hidden">
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -84,7 +84,7 @@ export default function Hero() {
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="text-center px-6 max-w-3xl">
             {/* Stats badge */}
-            <div className="mb-5">
+            <div className="mb-3">
               <span className="inline-flex items-center bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium">
                 <Eye size={16} className="mr-2" />
                 {slides[current].stats}
@@ -92,23 +92,23 @@ export default function Hero() {
             </div>
 
             {/* Title & description */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 text-white leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 text-white leading-tight">
               {slides[current].title}
             </h1>
-            <p className="text-xl md:text-2xl mb-7 text-white/90 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl mb-5 text-white/90 max-w-2xl mx-auto">
               {slides[current].text}
             </p>
 
             {/* CTA button */}
             <div className="flex justify-center mb-3">
-              <button className="flex items-center justify-center gap-3 bg-amber-200 hover:bg-amber-300 text-green-900 px-4 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+              <button className="flex items-center justify-center gap-3 bg-amber-200 hover:bg-amber-300 text-green-900 px-4 py-3 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                 <Heart size={22} />
                 {slides[current].cta}
               </button>
             </div>
 
             {/* 🔽 Navigation Dots (moved here, below CTA) */}
-            <div className="flex justify-center gap-3 mt-2">
+            <div className="flex justify-center gap-3 mt-4">
               {slides.map((_, idx) => (
                 <button
                   key={idx}

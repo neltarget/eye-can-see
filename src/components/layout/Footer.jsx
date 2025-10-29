@@ -99,8 +99,8 @@ const Footer = () => {
               community outreach programs across underserved regions.
             </p>
 
-            <button className="bg-green-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-800 transition-all duration-300 flex items-center shadow-md hover:shadow-lg">
-              <Heart className="w-4 h-4 mr-2 text-amber-300" />
+            <button className="bg-green-700 text-amber-100 px-6 py-3 rounded-lg font-semibold hover:bg-green-800 transition-all duration-300 flex items-center shadow-md hover:shadow-lg">
+              <Heart className="w-4 h-4 mr-2 text-amber-100" />
               Donate Now
             </button>
           </div>
